@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+    <EditText
+        android:id="@+id/ed_user"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_shape"
+        android:hint="     User Name"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signup"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/ed_account"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_shape"
+        android:hint="     Account"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_user"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_shape"
+        android:hint="     Password"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_account"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_shape"
+        android:hint="     Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:paddingLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_shape"
+        android:hint="     Phone Number"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_email"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@color/light_blue_900"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_cancel"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In Now"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
